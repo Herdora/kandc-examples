@@ -6,6 +6,8 @@ import torch.nn as nn
 
 import kandc
 
+import ignore_code_example
+
 
 @kandc.capture_model_class(model_name="SimpleNet")
 class SimpleNet(nn.Module):
@@ -29,6 +31,10 @@ def main():
         project="simple-demo",
         name="basic-example",
         tags=["simple-demo", "basic-example"],
+        code_exclude_patterns=[
+            "logs", "data/", "outputs/*"
+        ]
+        
     )
 
     # Create and run model
@@ -44,8 +50,16 @@ def main():
         time.sleep(random.random() * 2)
         print("✅ Random wait complete")
 
-    for i in range(10):
+    for i in range(5):
         random_wait()
+
+    def another_random_wait(a, b, c=3):
+        print(f"a: {a}, b: {b}, c: {c}")
+        time.sleep(random.random() * 2)
+        print("✅ Another random wait complete")
+    
+    for i in range(5):
+        kandc.timed_call("another_random_wait", another_random_wait, 1, b=2, c=3)
 
     try:
         backend_run_id = (
