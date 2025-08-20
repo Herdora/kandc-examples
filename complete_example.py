@@ -1,17 +1,4 @@
-#!/usr/bin/env python3
-"""
-Simple kandc Example
-===================
-
-A minimal example showing how to use kandc for experiment tracking.
-
-Requirements:
-    pip install torch kandc
-
-Usage:
-    python complete_example.py
-"""
-
+import os
 import time
 import random
 import torch
@@ -35,18 +22,17 @@ class SimpleNet(nn.Module):
 
 def main():
     print("🚀 Simple kandc Example")
-
-    # Initialize with debug logging
+    
+    # Initialize with configuration
     run = kandc.init(
         project="simple-demo",
         name="basic-example",
+        tags=["simple-demo", "basic-example"],
     )
-    print("✅ Using existing authentication")
 
     # Create and run model
     model = SimpleNet()
     data = torch.randn(32, 784)
-
     print("📊 Running model forward pass...")
     output = model(data)
     loss = output.mean()
@@ -57,20 +43,9 @@ def main():
         time.sleep(random.random() * 2)
         print("✅ Random wait complete")
 
-    random_wait()
-
-    # Log some metrics with x values
-    print("📈 Logging metrics...")
     for i in range(10):
-        # Simulate some training time
-        time.sleep(0.1)
+        random_wait()
 
-        # Use custom x value (could be epoch, iteration, etc.)
-        x_value = i * 0.5  # Example: x values will be 0, 0.5, 1.0, 1.5, etc.
-
-        kandc.log({"loss": loss.item(), "accuracy": random.random()}, x=x_value)
-
-    # Verify artifacts / print run id (fallback to local id if backend offline)
     try:
         backend_run_id = (
             getattr(run, "_run_data", {}).get("id") if getattr(run, "_run_data", None) else None
@@ -81,7 +56,7 @@ def main():
         print(f"✅ Run ID: {backend_run_id}")
         print("✅ API client initialized")
     else:
-        # Always available local run id
+        # We'll always have a local run id, even when offline
         print(f"✅ Local Run ID: {run.id}")
         print("⚠️ Backend run not created; operating offline")
 
