@@ -1,0 +1,13 @@
+2024-01-15 10:30:00 INFO - Starting experiment
+2024-01-15 10:30:01 INFO - Loading model checkpoint
+2024-01-15 10:30:02 INFO - Model loaded successfully
+2024-01-15 10:30:03 INFO - Starting training loop
+2024-01-15 10:30:04 INFO - Epoch 1/100 - Loss: 0.856
+2024-01-15 10:30:05 INFO - Epoch 2/100 - Loss: 0.743
+2024-01-15 10:30:06 INFO - Epoch 3/100 - Loss: 0.692
+2024-01-15 10:30:07 INFO - Validation accuracy: 0.85
+2024-01-15 10:30:08 INFO - Saving checkpoint
+2024-01-15 10:30:09 INFO - Experiment completed
+2024-01-15 10:30:10 INFO - Results saved to outputs/
+
+# This file should be excluded by the "*.log" pattern

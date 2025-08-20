@@ -1,0 +1,15 @@
+2024-01-15 09:00:00 INFO - Training session started
+2024-01-15 09:00:01 INFO - Loading dataset from data/training_data.csv
+2024-01-15 09:00:02 INFO - Dataset loaded: 10000 samples
+2024-01-15 09:00:03 INFO - Initializing model: SimpleNet
+2024-01-15 09:00:04 INFO - Model initialized with 123456 parameters
+2024-01-15 09:00:05 INFO - Starting training loop
+2024-01-15 09:00:10 INFO - Epoch 1/100 completed - Loss: 0.856, Accuracy: 0.72
+2024-01-15 09:00:15 INFO - Epoch 2/100 completed - Loss: 0.743, Accuracy: 0.78
+2024-01-15 09:00:20 INFO - Epoch 3/100 completed - Loss: 0.692, Accuracy: 0.82
+2024-01-15 09:00:25 INFO - Validation check - Accuracy: 0.85
+2024-01-15 09:00:30 INFO - Saving checkpoint to model_checkpoint.pth
+2024-01-15 09:00:35 INFO - Training completed successfully
+2024-01-15 09:00:36 INFO - Final results saved to outputs/results.json
+
+# This file should be excluded by the "logs/" pattern

@@ -1,0 +1,8 @@
+OPENAI_API_KEY=sk-fake-openai-key-1234567890abcdef
+AWS_ACCESS_KEY_ID=AKIA-FAKE-AWS-ACCESS-KEY
+AWS_SECRET_ACCESS_KEY=fake-aws-secret-key-abcdef1234567890
+DATABASE_PASSWORD=super-secret-db-password-123
+INTERNAL_API_TOKEN=bearer-token-xyz789
+
+# This file should be excluded by the "private_keys/" pattern
+# Never commit real API keys to version control!

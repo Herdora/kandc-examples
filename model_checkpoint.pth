@@ -1,0 +1,12 @@
+# This is a fake PyTorch model checkpoint file
+# In a real scenario, this would be a large binary file
+# This file should be excluded by the "*.pth" pattern
+
+fake_model_data = {
+    "model_state_dict": "fake_tensor_data_here",
+    "optimizer_state_dict": "fake_optimizer_data",
+    "epoch": 100,
+    "loss": 0.001,
+}
+
+print("This is a fake .pth file for testing ignore patterns")

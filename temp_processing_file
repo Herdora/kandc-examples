@@ -1,0 +1,11 @@
+This is a temporary processing file created during experiment execution.
+
+Processing status:
+- Data loaded: ✓
+- Model initialized: ✓  
+- Training started: ✓
+- Current epoch: 45/100
+- Current loss: 0.234
+- ETA: 15 minutes
+
+This file should be excluded by the "temp_*" pattern.

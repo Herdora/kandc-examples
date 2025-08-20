@@ -1,0 +1,5 @@
+{"metrics": {"step": 0, "loss": 0.005849264364504635, "accuracy": 0.5493076506827108, "batch_size": 32, "model_params": 101770, "excluded_files_count": 10, "x": 1755703517.517167, "timestamp": 1755703517517}}
+{"metrics": {"step": 1, "loss": 0.0005851771224142344, "accuracy": 0.8823734274774334, "batch_size": 32, "model_params": 101770, "excluded_files_count": 10, "x": 1755703521.168144, "timestamp": 1755703521168}}
+{"metrics": {"step": 2, "loss": 0.006684775756495827, "accuracy": 0.7661922662239651, "batch_size": 32, "model_params": 101770, "excluded_files_count": 10, "x": 1755703524.566684, "timestamp": 1755703524566}}
+{"metrics": {"step": 3, "loss": 0.004095035650339515, "accuracy": 0.920211820678698, "batch_size": 32, "model_params": 101770, "excluded_files_count": 10, "x": 1755703528.097928, "timestamp": 1755703528097}}
+{"metrics": {"step": 4, "loss": 0.0038593104778398405, "accuracy": 0.455180155222755, "batch_size": 32, "model_params": 101770, "excluded_files_count": 10, "x": 1755703531.2512488, "timestamp": 1755703531251}}

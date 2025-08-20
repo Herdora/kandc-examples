@@ -1,0 +1,8 @@
+{
+  "step": 4,
+  "loss": 0.0038593104778398405,
+  "accuracy": 0.455180155222755,
+  "batch_size": 32,
+  "model_params": 101770,
+  "excluded_files_count": 10
+}

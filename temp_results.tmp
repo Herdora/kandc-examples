@@ -1,0 +1,14 @@
+Temporary results file
+=====================
+
+This is a temporary file that contains intermediate results
+from the experiment. It should be excluded by the "*.tmp" pattern.
+
+Intermediate metrics:
+- Step 1: loss=0.95, acc=0.12
+- Step 2: loss=0.87, acc=0.23  
+- Step 3: loss=0.76, acc=0.34
+- Step 4: loss=0.68, acc=0.45
+- Step 5: loss=0.61, acc=0.56
+
+This file will be deleted after processing.

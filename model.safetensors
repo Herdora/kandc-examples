@@ -1,0 +1,13 @@
+# This is a fake SafeTensors model file
+# In reality, this would be a binary format
+# This file should be excluded by the "*.safetensors" pattern
+
+fake_safetensors_header = {
+    "metadata": {
+        "format": "safetensors",
+        "model_type": "SimpleNet",
+        "total_size": 1234567
+    }
+}
+
+print("This is a fake .safetensors file for testing ignore patterns")
